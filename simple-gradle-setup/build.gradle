@@ -1,0 +1,22 @@
+plugins {
+    id("com.github.johnrengelman.shadow") version "5.0.0"
+    id('application')
+}
+
+mainClassName = 'com.brightonsbox.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+
+    implementation('com.google.guava:guava:27.0.1-jre')
+
+    testImplementation('org.junit.jupiter:junit-jupiter-api:5.4.2')
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.4.2')
+}
+
+test {
+    useJUnitPlatform()
+}
