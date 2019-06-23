@@ -3,12 +3,18 @@
  */
 package com.brightonsbox;
 
+
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class MainTest {
-    @Test public void testAppHasAGreeting() {
+
+    @Test
+    public void testAppHasAGreeting() {
+
         Main classUnderTest = new Main();
-        assertEquals("Hello world.", classUnderTest.getGreeting());
+
+        assertThat(classUnderTest.getGreeting()).isEqualTo("Hello world.");
     }
 }
