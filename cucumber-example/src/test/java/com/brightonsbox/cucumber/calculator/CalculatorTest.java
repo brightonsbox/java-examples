@@ -1,4 +1,4 @@
-package com.brightonsbox.cucumber;
+package com.brightonsbox.cucumber.calculator;
 
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;

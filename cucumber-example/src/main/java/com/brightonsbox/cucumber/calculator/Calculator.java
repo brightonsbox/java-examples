@@ -1,4 +1,4 @@
-package com.brightonsbox.cucumber;
+package com.brightonsbox.cucumber.calculator;
 
 class Calculator {
 
